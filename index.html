@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  </head>
+
+<body>
+  <nav class="navbar navbar-expand-sm bg-light">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Data</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Comparison</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Plots</a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="temp.html">Max Temperature</a>
+          <a class="dropdown-item" href="humidity.html">Humidity</a>
+          <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+          <a class="dropdown-item" href="wind.html">Wind Speed</a>
+        </div>
+      </li>
+    </ul>
+  </nav> 
+</div>
+  
+  
+  <div class = "container-fluid">
+      <section class = "row">
+        <div class="col-md-8">
+          <h1 class="text-info">Summary: Latitude vs. X</h1>
+            <hr>
+          <p>In this project, we used the OpenWeatherMap API to pull data correlating the latitude and longitude of ~500 cities with various weather factors. </p>
+          <img class="img-fluid" src="./Resources/Fig1.png" alt="maxtemp" style="width:300px;height:300px;float:left">
+          <p>We then used Python's MatPlotLib after cleaning up our data set to plot our latitude coordinates with our city's weather factors; maximum temperature, cloudiness, humidity, and wind speed. This site provides summaries of each of our findings regarding latitue and weather conditions.</p>
+          </div>
+        <div class = "col-md-4">
+            <h1 class="text-info">Visualizations</h1>
+            <hr>
+            <a href="index.html">
+            <img class="img-fluid" src="./Resources/Fig1.png" alt="maxtemp" style="width:200px;height:200px;float:left">
+            </a>
+            <a href="wind.html">
+            <img class="img-fluid" src="./Resources/Fig4.png" alt="windspeed" style="width:200px;height:200px;float:left">
+            </a>
+            <a href="cloudiness.html">
+            <img class="img-fluid" src="./Resources/Fig2.png" alt="cloudiness" style="width:200px;height:200px;float:left">
+            </a>
+            <a href="temp.html">
+            <img class="img-fluid" src="./Resources/Fig3.png" alt="maxtemp" style="width:200px;height:200px;float:left">
+            </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    
+  </div>
+</body>
+
+</html>
+
