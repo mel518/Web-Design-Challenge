@@ -11,26 +11,37 @@
   </head>
 
 <body>
-  <nav class="navbar navbar-expand-sm bg-light">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="#">Data</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Comparison</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Plots</a>
-        <div class="dropdown-menu">
-          <a class="dropdown-item" href="temp.html">Max Temperature</a>
-          <a class="dropdown-item" href="humidity.html">Humidity</a>
-          <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
-          <a class="dropdown-item" href="wind.html">Wind Speed</a>
-        </div>
-      </li>
-    </ul>
-  </nav> 
-</div>
+  <nav class="navbar navbar-expand-sm bg-info navbar-light">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="data.html">Data</a>
+
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="comparison.html">Comparison</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Plots</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="temp.html">Max Temperature</a></li>
+              <li><a class="dropdown-item" href="humidity.html">Humidity</a></li>
+              <li><a class="dropdown-item" href="cloudiness.html">Cloudiness</a></li>
+              <li><a class="dropdown-item" href="wind.html">Wind Speed</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
   
   
   <div class = "container-fluid">
@@ -40,7 +51,8 @@
             <hr>
           <p>In this project, we used the OpenWeatherMap API to pull data correlating the latitude and longitude of ~500 cities with various weather factors. </p>
           <img class="img-fluid" src="./Resources/Fig1.png" alt="maxtemp" style="width:300px;height:300px;float:left">
-          <p>We then used Python's MatPlotLib after cleaning up our data set to plot our latitude coordinates with our city's weather factors; maximum temperature, cloudiness, humidity, and wind speed. This site provides summaries of each of our findings regarding latitue and weather conditions.</p>
+          <p>We then used Python's MatPlotLib after cleaning up our data set to plot our latitude coordinates with our cities' weather factors; maximum temperature, cloudiness, humidity, and wind speed. 
+            This site provides the visualization of each of our findings regarding latitue and weather conditions.</p>
           </div>
         <div class = "col-md-4">
             <h1 class="text-info">Visualizations</h1>

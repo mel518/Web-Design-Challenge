@@ -10,5 +10,39 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   </head>
 <body>
+  <nav class="navbar navbar-expand-sm bg-info navbar-light">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+          <li class="nav-item">
+            <a class="nav-link" href="data.html">Data</a>
+
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="comparison.html">Comparison</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Plots</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="temp.html">Max Temperature</a></li>
+              <li><a class="dropdown-item" href="humidity.html">Humidity</a></li>
+              <li><a class="dropdown-item" href="cloudiness.html">Cloudiness</a></li>
+              <li><a class="dropdown-item" href="wind.html">Wind Speed</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
     <h1 class = "text-info">Cloudiness vs Latitude</h1>
+    <hr>
+        <p>When plotting a city's cloudiness versus its latitude, we saw there is no correlation.<br> For example, cities with the same latitude could have all sorts of cloudiness levels between 0% and 100%. You cannot rely on latitude to indicate a city's cloudiness level.</p>
+        <img class="img-fluid" src="./Resources/Fig3.png" alt="cloudiness" style="width:600px;height:500px;float:left">
 </body>
